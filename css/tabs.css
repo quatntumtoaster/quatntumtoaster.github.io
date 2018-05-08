@@ -1,0 +1,78 @@
+* {box-sizing: border-box}
+
+/* Style tab links */
+.tablink {
+  background-color: #1a1a1a;
+  color: #808080;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+/* Style tab links */
+.tablinkIndex {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+.tablinkCurrent {
+  background-color: #00b7ff;
+  color: #e6e6e6;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+.tablink:hover {
+  background-color: #00b7ff;
+  color: #1a1a1a;
+}
+
+.tablinkCurrent:hover {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#HOME {background-color: #00b7ff;}
+#ABOUT {background-color: #1a1a1a;}
+#DP {background-color: #1a1a1a;}
+#MINISTRY {background-color: #1a1a1a;}
+#SF {background-color: #1a1a1a;}
+#RESUME {background-color: #e6e6e6;}
+#CONTACT {background-color: #e6e6e6;}
+#ART74 {background-color: #1a1a1a;}

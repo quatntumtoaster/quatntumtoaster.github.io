@@ -1,0 +1,58 @@
+.centerLogo{
+  position: fixed;
+  top: 47.5%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -52.3px;
+}
+.centerPulse{
+  position: fixed;
+  top: 47.5%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+
+.quoteText{
+  position: fixed;
+  float: left;
+  top: 57.5%;
+  left: 50%;
+  transform: translate(-50%, -57.5%);
+}
+.pulse {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 150%;
+  background: rgba(230,230,230,1);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(230,230,230,0.75);
+  animation: pulse 6s infinite;
+  animation-delay: 1.5s;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(230,230,230,1);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 50px rgba(230,230,230,0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(230,230,230,0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(230,230,230,1);
+    box-shadow: 0 0 0 0 rgba(230,230,230,1);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 50px rgba(230,230,230,0);
+      box-shadow: 0 0 0 50px rgba(230,230,230,0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(230,230,230,0);
+      box-shadow: 0 0 0 0 rgba(230,230,230,0);
+  }
+}
