@@ -22,9 +22,12 @@ function mouseClicked(){
   // when the mouse is clicked
   var xrand = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
   var yrand = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
-  
-  xspeed = xrand;
-  yspeed = yrand;
+
+  var xrandmult = Math.floor(Math.random() * (1 - -1 + 1)) - 1;
+  var yrandmult = Math.floor(Math.random() * (1 - -1 + 1)) - 1;
+
+  xspeed = xrand * xrandmult;
+  yspeed = yrand * yrandmult;
 }
 
 function draw() {
