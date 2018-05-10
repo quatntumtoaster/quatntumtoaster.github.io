@@ -100,3 +100,141 @@ a:active {
 
 #homeLogoPos {padding-left : 20px;float:left;}
 #pageTitlePos {float:center;}
+
+.centerLogo{
+  position: fixed;
+  top: 47.5%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -52.3px;
+}
+.centerPulse{
+  position: fixed;
+  top: 47.5%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+
+.quoteText{
+  position: fixed;
+  float: left;
+  top: 57.5%;
+  left: 50%;
+  transform: translate(-50%, -57.5%);
+}
+.pulse {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 150%;
+  background: rgba(230,230,230,1);
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(230,230,230,0.75);
+  animation: pulse 6s infinite;
+  animation-delay: 1.5s;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(230,230,230,1);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 50px rgba(230,230,230,0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(230,230,230,0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(230,230,230,1);
+    box-shadow: 0 0 0 0 rgba(230,230,230,1);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 50px rgba(230,230,230,0);
+      box-shadow: 0 0 0 50px rgba(230,230,230,0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(230,230,230,0);
+      box-shadow: 0 0 0 0 rgba(230,230,230,0);
+  }
+}
+
+* {box-sizing: border-box}
+
+/* Style tab links */
+.tablink {
+  background-color: #1a1a1a;
+  color: #808080;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+/* Style tab links */
+.tablinkIndex {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+.tablinkCurrent {
+  background-color: #00b7ff;
+  color: #e6e6e6;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "futura-pt",sans-serif;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16.6667%;
+  height: 75px;
+}
+
+.tablink:hover {
+  background-color: #00b7ff;
+  color: #1a1a1a;
+}
+
+.tablinkCurrent:hover {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#HOME {background-color: #00b7ff;}
+#ABOUT {background-color: #1a1a1a;}
+#DP {background-color: #1a1a1a;}
+#MINISTRY {background-color: #1a1a1a;}
+#SF {background-color: #1a1a1a;}
+#RESUME {background-color: #e6e6e6;}
+#CONTACT {background-color: #e6e6e6;}
+#ART74 {background-color: #1a1a1a;}

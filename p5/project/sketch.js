@@ -12,18 +12,23 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   smooth();
   ellipseMode(RADIUS);
-  frameRate(240);
+  frameRate(60);
   xpos = width/2;
   ypos = height/2;
   background('#1a1a1a');
 }
 
 function mouseClicked(){
-  xspeed = 11;
-  yspeed = 9;
+  // when the mouse is clicked
+  var xrand = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  var yrand = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  
+  xspeed = xrand;
+  yspeed = yrand;
 }
 
 function draw() {
+  //loop of what to display
 
   xpos = xpos + (xspeed * xdir);
   ypos = ypos + (yspeed * ydir);
@@ -36,7 +41,8 @@ function draw() {
     ypos = pmouseY;
   }
 
-  if (xpos >= width+rad) {
+  //
+  if (xpos > width+rad) {
     xdir *= -1;
     background('#ff0700');
   } else if (xpos <= 0){
@@ -44,7 +50,7 @@ function draw() {
     background('#00ffb7');
   }
 
-  if (ypos >= height+rad) {
+  if (ypos > height+rad) {
     ydir *= -1;
     background('#00b7ff');
   } else if (ypos <= 0) {
